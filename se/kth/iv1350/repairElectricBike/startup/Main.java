@@ -25,7 +25,7 @@ public class Main {
         Controller contr = new Controller();
         View view = new View(contr);
 
-        RepairOrderDTO order = new RepairOrderDTO("The bike exploded",123555,"NO12","Undecided","Undecided","Undecided");
+        RepairOrderDTO order = new RepairOrderDTO("The bike exploded",123555,"NO12");
         repairOrderRegistry.addRepairOrder(reOrRegistry, order);
         contr.addDiagnosticResult(repairOrderRegistry, 123555, "It's in smithereens.");
         contr.addRepairTask(repairOrderRegistry, 123555, "Ducktape.");
