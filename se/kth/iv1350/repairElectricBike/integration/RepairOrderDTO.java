@@ -29,12 +29,12 @@ public class RepairOrderDTO {
      * @param repairTask An empty string that'll be used by the technician later
      * @param state An empty string that'll be used by the technician later
      */
-    public RepairOrderDTO(String problemDesc,int phoneNumber,String bikeSerialNo,String diagnosticResult, String repairTask,String state){
+    public RepairOrderDTO(String problemDesc,int phoneNumber,String bikeSerialNo){
         this.problemDesc = problemDesc;
         this.phoneNumber = phoneNumber;
         this.bikeSerialNo = bikeSerialNo;
-        this.diagnosticResult = diagnosticResult;
-        this.repairTask = repairTask;
-        this.state = state;
+        this.diagnosticResult = "Undecided";
+        this.repairTask = "Undecided";
+        this.state = "Undecied";
     }
 }
