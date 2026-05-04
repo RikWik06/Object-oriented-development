@@ -49,7 +49,7 @@ public class RepairOrderRegistry {
      * It serches through the array to find the repair order with the matching phone number
      * @param repairOrderRegistry The array it serches through
      * @param phoneSearch The phone number used to identify the repair order
-     * @return
+     * @return The index of the repair order in the registry
      */
     public int findRepairOrder(RepairOrderDTO[] repairOrderRegistry, int phoneSearch){
         int index = -1;
