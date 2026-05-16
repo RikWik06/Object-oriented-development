@@ -101,7 +101,7 @@ public class RepairOrderRegistry {
             ErrorMessageHandler errorHandler = new ErrorMessageHandler();
             errorHandler.showErrorMsg(exception.getMessage());
             logHandler.logException(exception);
-            throw new DatabaseCanNotBeCalledException(exception.getMessage());
+            throw exception;
         }
         RepairOrderDTO[] registry = this.registry;
         RepairOrderDTO order = null;
