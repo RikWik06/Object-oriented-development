@@ -71,7 +71,6 @@ public class RepairOrderRegistryTest {
         assertEquals(expProblem, retrivedOrder.getProblemDesc(), "The found repair order isn't right.");
         assertEquals(expPhoneNr, retrivedOrder.getPhoneNumber(), "The found repair order isn't right.");
         assertEquals(expBikeSerialNo, retrivedOrder.getBikeSerialNo(), "The found repair order isn't right.");
-        //I was worried about encaptulation of comparing it to a refrence to itself so isteam im testing all of it's destinktive data
     }
 
     @Test
