@@ -76,6 +76,6 @@ public class CustomerRegistry {
         ErrorMessageHandler errorHandler = new ErrorMessageHandler();
         errorHandler.showErrorMsg(expection.getMessage());
         logHandler.logException(expection);
-        throw new CustomerRegistryException(expection.getMessage());
+        throw exception;
     }
 }
