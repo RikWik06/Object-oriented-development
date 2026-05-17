@@ -58,8 +58,10 @@ public class RepairOrderRegistry {
      * @param updatedOrder The new, updated repair order
      */
     private void notifyObservers(RepairOrderDTO oldOrder, RepairOrderDTO updatedOrder){
-        for (RepairOrderObserver obs: RepairOrderObservers){
-            obs.repairOrderWasUpdated(oldOrder, updatedOrder);
+        for (int i = 0; i < RepairOrderObservers.length; i++){
+            if(RepairOrderObservers[i] != null) {
+                RepairOrderObservers[i].repairOrderWasUpdated(oldOrder, updatedOrder);
+            }
         }
     }
 
